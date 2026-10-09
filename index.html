@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T&amp;H Group Miền Trung – Quy trình xử lý tài liệu có AI và kiểm duyệt của kỹ sư</title>
+<meta name="description" content="T&amp;H Group Miền Trung phát triển quy trình xử lý tài liệu và tính toán kỹ thuật bằng AI, có kỹ sư phê duyệt và truy vết được từng kết quả.">
+<link rel="canonical" href="https://th-holdings.com.vn/">
+<meta property="og:title" content="T&amp;H Group Miền Trung">
+<meta property="og:description" content="AI hỗ trợ xử lý tài liệu kỹ thuật, kỹ sư phê duyệt, mọi kết quả đều truy vết được.">
+<meta property="og:url" content="https://th-holdings.com.vn/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Công ty Cổ phần Đầu tư T&H Group Miền Trung",
+  "telephone": "+84967678989",
+  "address": {"@type":"PostalAddress","streetAddress":"Số 53, ngõ 18, đường Nguyễn Đức Cảnh, phường Thành Vinh","addressRegion":"Nghệ An","addressCountry":"VN"},
+  "url": "https://th-holdings.com.vn",
+  "email": "th-holdings@th-holdings.com.vn",
+  "foundingDate": "2025-05",
+  "areaServed": "VN"
+}
+</script>
+<style>
+:root{
+  --ink:#10262B; --ink-soft:#4A5E63; --paper:#F2F6F6; --white:#FFFFFF;
+  --deep:#0E3B43; --deep-2:#14515B; --sand:#E3A93B; --line:#D3DEDF;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E8F0F0; --ink-soft:#A3B8BB; --paper:#0B1F23; --white:#112A2F;
+    --deep:#0A2D34; --deep-2:#14515B; --line:#25444A;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sand);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.01em;text-decoration:none;font-size:18px}
+.brand span{color:var(--sand)}
+nav a{margin-left:22px;text-decoration:none;font-size:15px;color:var(--ink-soft)}
+nav a:hover{color:var(--ink)}
+
+.hero{background:var(--deep);color:#EAF3F3;padding:72px 0 80px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.15;margin:0 0 20px;max-width:18em;font-weight:700}
+.hero p{max-width:40em;font-size:19px;color:#C5DADC;margin:0 0 32px}
+.btn{display:inline-block;background:var(--sand);color:#10262B;padding:13px 26px;border-radius:6px;
+  font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.07)}
+.hero svg{position:absolute;right:-40px;bottom:-10px;width:min(560px,70vw);opacity:.9}
+header.top.on-hero{position:relative;z-index:2}
+
+section{padding:64px 0}
+h2{font-size:clamp(24px,3.2vw,32px);line-height:1.25;margin:0 0 20px}
+.lead{max-width:44em;color:var(--ink-soft)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:36px}
+.cols h3{margin:0 0 8px;font-size:18px;border-top:3px solid var(--sand);padding-top:14px}
+.cols p{margin:0;color:var(--ink-soft);font-size:16px}
+
+.flow{background:var(--white);border-block:1px solid var(--line)}
+.steps{list-style:none;counter-reset:s;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.steps li{counter-increment:s;position:relative;padding-top:44px;font-size:15.5px;color:var(--ink-soft)}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:32px;height:32px;border-radius:50%;
+  background:var(--deep-2);color:#fff;display:grid;place-items:center;font-weight:600;font-size:15px}
+.steps li strong{display:block;color:var(--ink);font-size:16.5px;margin-bottom:4px}
+.note{margin-top:28px;padding:16px 20px;border-left:4px solid var(--sand);background:var(--paper);max-width:44em;font-size:15.5px}
+
+.facts{display:grid;grid-template-columns:200px 1fr;gap:10px 28px;margin:24px 0 0;max-width:640px}
+.facts dt{color:var(--ink-soft)}
+.facts dd{margin:0;font-weight:500}
+
+footer{background:var(--deep);color:#B7CED1;padding:32px 0;font-size:14.5px}
+footer a{color:#EAF3F3}
+.fine{max-width:44em}
+
+@media (max-width:800px){
+  .cols,.steps{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr;gap:2px}
+  .facts dd{margin-bottom:12px}
+  nav a{margin:0 18px 0 0}
+  .hero svg{opacity:.25}
+}
+</style>
+</head>
+<body>
+
+<div style="background:var(--deep);color:#EAF3F3">
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#">T&amp;H Group <span>Miền Trung</span></a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#linh-vuc">Lĩnh vực</a>
+        <a href="#quy-trinh">Cách làm việc</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <h1>AI xử lý tài liệu kỹ thuật, kỹ sư giữ quyền quyết định.</h1>
+    <p>Chúng tôi xây dựng quy trình tự động hóa các công việc lặp lại như đọc hồ sơ, đối chiếu thông tin và chạy công cụ tính toán. Mỗi kết quả đều được kỹ sư duyệt và truy vết về nguồn.</p>
+    <a class="btn" href="#lien-he">Trao đổi với chúng tôi</a>
+  </div>
+  <svg viewBox="0 0 560 300" aria-hidden="true" fill="none" stroke="#5FA3AB" stroke-width="2">
+    <path d="M0 220 Q70 170 140 205 T280 190 T420 200 T560 165"/>
+    <path d="M0 250 Q70 200 140 235 T280 220 T420 230 T560 195" opacity=".6"/>
+    <path d="M0 280 Q70 230 140 265 T280 250 T420 260 T560 225" opacity=".35"/>
+    <circle cx="440" cy="70" r="34" stroke="#E3A93B"/>
+  </svg>
+</div>
+
+<section id="gioi-thieu">
+  <div class="wrap">
+    <h2>Giới thiệu</h2>
+    <p class="lead">Công ty Cổ phần Đầu tư T&amp;H Group Miền Trung là doanh nghiệp công nghệ thành lập tháng 5/2025, hoạt động trong lĩnh vực ứng dụng trí tuệ nhân tạo cho doanh nghiệp. Hiện chúng tôi đang ở giai đoạn phát triển sản phẩm ban đầu, tập trung vào một bài toán cụ thể: giảm công việc thủ công khi xử lý hồ sơ kỹ thuật mà vẫn giữ được độ chính xác.</p>
+    <dl class="facts">
+      <dt>Tên doanh nghiệp</dt><dd>Công ty Cổ phần Đầu tư T&amp;H Group Miền Trung</dd>
+      <dt>Mã số doanh nghiệp</dt><dd>2902278920</dd>
+      <dt>Thành lập</dt><dd>Tháng 5/2025</dd>
+      <dt>Lĩnh vực</dt><dd>Trí tuệ nhân tạo / Học máy</dd>
+      <dt>Địa bàn</dt><dd>Việt Nam</dd>
+      <dt>Email</dt><dd><a href="mailto:th-holdings@th-holdings.com.vn">th-holdings@th-holdings.com.vn</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section id="linh-vuc" style="padding-top:0">
+  <div class="wrap">
+    <h2>Chúng tôi đang xây dựng gì</h2>
+    <p class="lead">Một hệ thống dùng mô hình ngôn ngữ Claude của Anthropic qua API để hỗ trợ đội kỹ thuật xử lý khối lượng hồ sơ lớn.</p>
+    <div class="cols">
+      <div>
+        <h3>Xử lý tài liệu</h3>
+        <p>Đọc và trích xuất thông tin từ hồ sơ, bảng số liệu và tài liệu kỹ thuật, kể cả khi dữ liệu thiếu hoặc mâu thuẫn giữa các nguồn.</p>
+      </div>
+      <div>
+        <h3>Kết nối công cụ tính toán</h3>
+        <p>AI gọi các công cụ tính toán chuyên dụng thay vì tự ước lượng, để kết quả số liệu nhất quán và kiểm tra lại được.</p>
+      </div>
+      <div>
+        <h3>Đánh giá chất lượng</h3>
+        <p>Xây dựng bộ phương pháp đo độ chính xác, độ nhất quán và chi phí, để cải tiến hệ thống dựa trên số liệu thay vì cảm tính.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quy-trinh" class="flow">
+  <div class="wrap">
+    <h2>Cách làm việc: AI đề xuất, kỹ sư phê duyệt</h2>
+    <p class="lead">Kết quả của AI chỉ được dùng chính thức sau khi kỹ sư xem xét.</p>
+    <ol class="steps">
+      <li><strong>Tiếp nhận hồ sơ</strong>AI đọc tài liệu và liệt kê thông tin còn thiếu hoặc không khớp.</li>
+      <li><strong>Tính toán</strong>AI gọi công cụ tính toán phù hợp và ghi lại đầu vào, đầu ra.</li>
+      <li><strong>Kỹ sư duyệt</strong>Kỹ sư xem kết quả, chỉnh sửa hoặc từ chối trước khi chốt.</li>
+      <li><strong>Lưu vết</strong>Mỗi kết quả gắn với nguồn dữ liệu, phiên bản công cụ và người duyệt.</li>
+    </ol>
+    <p class="note">Nguyên tắc của chúng tôi: AI không tự đưa ra kết luận cuối cùng. Việc chốt kết quả thuộc về người có chuyên môn và trách nhiệm.</p>
+  </div>
+</section>
+
+<section id="lien-he">
+  <div class="wrap">
+    <h2>Liên hệ</h2>
+    <p class="lead">Nếu bạn quan tâm đến hợp tác hoặc muốn trao đổi về việc ứng dụng AI vào quy trình kỹ thuật, hãy gửi email cho chúng tôi.</p>
+    <dl class="facts">
+      <dt>Người đại diện</dt><dd>Nguyễn Duy Ngọc, Giám đốc</dd>
+      <dt>Email</dt><dd><a href="mailto:th-holdings@th-holdings.com.vn">th-holdings@th-holdings.com.vn</a></dd>
+      <dt>Điện thoại</dt><dd><a href="tel:+84967678989">0967 678 989</a></dd>
+      <dt>Địa chỉ</dt><dd>Số 53, ngõ 18, đường Nguyễn Đức Cảnh, phường Thành Vinh, tỉnh Nghệ An</dd>
+      <dt>Văn phòng giao dịch</dt><dd>Căn hộ Shophouse 08, Chung cư Phúc Thịnh, đường Lê Mao kéo dài, phường Trường Vinh, tỉnh Nghệ An</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fine">© 2025 Công ty Cổ phần Đầu tư T&amp;H Group Miền Trung – MST 2902278920. Trang web này chỉ thu thập thông tin khi bạn chủ động gửi email cho chúng tôi, và chúng tôi chỉ dùng thông tin đó để phản hồi bạn. Claude là sản phẩm của Anthropic; Công ty là đơn vị độc lập sử dụng Claude API.</p>
+    <p>Liên hệ: <a href="mailto:th-holdings@th-holdings.com.vn">th-holdings@th-holdings.com.vn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
